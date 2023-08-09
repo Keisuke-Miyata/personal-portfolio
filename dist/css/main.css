@@ -374,20 +374,13 @@
   display: flex;
   flex-direction: column;
 }
-
-li {
+.skills li {
   transition: 0.3s;
 }
-
-li:hover {
+.skills li:hover {
   transform: scale(1.3);
 }
-
-body {
-  background: #fff;
-}
-
-span {
+.skills span {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 2rem;

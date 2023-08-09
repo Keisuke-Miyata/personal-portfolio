@@ -6,8 +6,6 @@ const navItems = document.querySelectorAll('.menu-nav__item');
 
 let showMenu = false;
 
-//ejs
-let ejs = require('ejs');
 
 menuBtn.addEventListener('click', toggleMenu);
 

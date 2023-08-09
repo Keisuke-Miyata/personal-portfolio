@@ -44,25 +44,24 @@
         display: flex;
         flex-direction: column;
     }
+
+    li {
+        transition: 0.3s;
+    }
+    
+    li:hover{
+        transform: scale(1.3);
+    }
+
+    span {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 2rem;
+        display: block;
+    }
 }
 
-li {
-    transition: 0.3s;
-}
 
-li:hover{
-    transform: scale(1.3);
-}
 
-body {
-    background: $tertiary-color;
-}
-
-span {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 2rem;
-    display: block;
-}
 
 
