@@ -94,8 +94,12 @@
   background: #474747;
   list-style-type: none;
   padding-right: 1rem;
+  padding-bottom: 20px;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
+  /* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
 }
 .nav .menu-nav.open {
   transform: translateY(0);
@@ -120,6 +124,44 @@
 }
 .nav .menu-nav__link:hover {
   color: #ff652f;
+}
+.nav .menu-nav__dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 8px 5px;
+  font-size: 16px;
+  border: none;
+}
+.nav .menu-nav__dropbtn:hover {
+  background-color: #3e8e41; /* Change background color on hover */
+}
+.nav .menu-nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav .menu-nav__dropdown:hover .menu-nav__dropdown-content {
+  /* Show the dropdown menu on hover */
+  display: block;
+  top: 100%; /* Adjust the position */
+  left: 0; /* Adjust the position */
+  width: 100%; /* Adjust the width */
+}
+.nav .menu-nav__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* Change color of dropdown links on hover */
+}
+.nav .menu-nav__dropdown-content__item {
+  color: black;
+  padding: 3px 10px;
+  display: block;
+}
+.nav .menu-nav__dropdown-content a:hover {
+  background-color: #ddd;
 }
 
 .menu-nav__item:nth-child(1) {
