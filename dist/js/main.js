@@ -52,7 +52,7 @@ var data = {
 // Function to set the selected language
 function setSelectedLanguage(language) {
     localStorage.setItem('selectedLanguage', language);
-    window.location.search = '?lang=${language}';
+    window.location.search = `?lang=${language}`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
