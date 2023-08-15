@@ -255,7 +255,6 @@
 }
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
   overflow: hidden;
   cursor: pointer;
 }
