@@ -37,7 +37,12 @@ var data = {
         "bio": "I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to " +
                     "all challenging situations. I am able to work well both in a team environment as well as using own initiative. " +
                     "I am able to work well under pressure and adhere to strict deadlines. Not to mention, I am also a quick learner.",
-        "description": "It was a nice day!"
+        "jobTitle": "House Keeper",
+        "jobTask1": "Managed guest supplies and replenished as required.",
+        "jobTask2": "Performed regular sanitization of all guest bathrooms and clean rooms.",
+        "jobTask3": "Analyzed every room individually to ensure efficient cleanliness as per requirement.",
+        "jobTask4": "Coordinated with housekeeping lead and ensured clean hotel rooms and hallways."
+
     },
     "japanese": {
         "firstName": "宮田",
@@ -45,7 +50,11 @@ var data = {
         "bio": "私がエンジニアを目指した理由は当時、成長産業であって技術力次第で年齢に関係なく評価されつつ、社会貢献をしたいと考えていたからです。" +
             "世界中で優秀なエンジニアの人材不足が叫ばれる中、私自身がCSを学び国境に関係なく働くことにより、個人としての欲求と社会的貢献の両方を満たせると考えています。"+
             "エンジニアとしてはスタートは遅いかもしれませんが、日々自己研磨に取り組んでエンジニアとしての質の向上に取り組んでいきます。",
-        "description": "今日はとてもいい天気だった。"
+        "jobTitle": "ハウスキーパー",
+        "jobTask1": "アメニティ、備品の補充、ルームサービス。",
+        "jobTask2": "定期清掃、客室の清掃。",
+        "jobTask3": "要求があれば客室の点検。",
+        "jobTask4": "早朝の公共施設の清掃、チームでの特殊清掃。",
     }
 }
 
@@ -65,6 +74,11 @@ const lastName = document.querySelector('.lastName');
 const link = document.querySelectorAll('.menu-nav__dropdown-content__item');
 const bio = document.querySelector('.bio');
 const languageBtn = document.querySelector('.language-btn');
+const jobTitle = document.querySelector('.jobTitle');
+const jobTask1 = document.querySelector('.jobTask1');
+const jobTask2 = document.querySelector('.jobTask2');
+const jobTask3 = document.querySelector('.jobTask3');
+const jobTask4 = document.querySelector(".jobTask4");
 
 link.forEach(event => {
     event.addEventListener('click', () => {
@@ -81,7 +95,13 @@ if (currentPath.includes('index.html')){
     lastName.innerText = data[language].lastName;
 
 } else if (currentPath.includes('about.html')){
-    bio.innerText = data[language].bio;   
+    bio.innerText = data[language].bio;
+    jobTitle.innerText = data[language].jobTitle;
+    jobTask1.innerText = data[language].jobTask1;
+    jobTask2.innerText = data[language].jobTask2;
+    jobTask3.innerText = data[language].jobTask3;
+    jobTask4.innerHTML = data[language].jobTask4;
+       
 } else if (currentPath.includes('projects.html')){
     null
 } else if (currentPath.includes('skill.html')) {
